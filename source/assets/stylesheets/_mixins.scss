@@ -1,0 +1,35 @@
+/*
+MIXINS
+*/
+
+@import 'vendor-prefixes';
+@import 'clearfix';
+
+@mixin browser-appearance($appearance) {
+  -webkit-appearance: $appearance;
+  -moz-appearance:    $appearance;
+  appearance:         $appearance;
+}
+
+@mixin proportionate-height() {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+@mixin y-align-middle {
+  top: 50%;
+  @include translate(0, -50%);
+}
+
+@mixin x-align-center {
+  left: 50%;
+  @include translate(-50%, 0);
+}
+
+@mixin bullseye {
+  top: 50%;
+  left: 50%;
+  @include translate(-50%, -50%);
+}

@@ -1,10 +1,12 @@
 ---
-title: Welcome to Middleman
+title: Lemons
 ---
+<div id="grid">
+<% ['sunday', 'angelround', 'multiply', '6degrees', 'lifeopp', 'curioucity', 'found', 'fisheye'].each do |work| %>
+  <%= partial(:tile, locals: { :work => work }) %>
+<% end %>
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+  <%= partial 'lemons.svg' %>
+  <%= partial 'lemons.svg' %>
+
+</div>

@@ -12,3 +12,27 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
+
+# Minify HTML
+gem "middleman-minify-html"
+
+# Use Sass
+gem 'sass'
+
+# Imageoptim
+gem "middleman-imageoptim", "~> 0.1.3"
+
+# Used for publishing to Github Pages
+gem 'middleman-deploy'
+
+# For formatting data
+gem "twitter_cldr"
+
+# For HTML parsing
+gem "nokogiri"
+
+# SVG fallback
+gem 'middleman-svg-fallback'
+
+# Thumbnail generation
+gem 'middleman-thumbnailer', :git => 'https://github.com/nhemsley/middleman-thumbnailer.git'

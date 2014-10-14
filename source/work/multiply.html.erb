@@ -1,0 +1,22 @@
+---
+title: Multiply
+work: multiply
+---
+<div class="work">
+
+  <%= partial(:cover, locals: { :work => current_page.data.work }) %>
+  
+  <div class="story">
+    
+    <p class="lead">A leafy motif designed for <em>Multiply</em> &ndash; affordable, short term software development courses for those who want practical new skills for a technology-centric future.</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis porta nulla, sed pharetra erat convallis in. Nullam hendrerit purus non nisl rutrum egestas. Proin cursus sit amet leo at porta. Nam vitae libero at nisl bibendum laoreet. Sed vehicula pellentesque nunc quis ultrices. Sed aliquet nunc lectus, at tincidunt tellus mollis vel. Nam sit amet luctus metus. In faucibus ligula nec laoreet vehicula.</p>
+    <p>Integer sit amet sollicitudin risus. Vestibulum sagittis urna tellus, ut mollis massa tincidunt non. Vestibulum maximus mauris at ligula dignissim interdum. Aliquam eleifend ante et euismod lobortis. Proin semper leo in varius molestie. Morbi lacinia dolor ac erat porttitor, a aliquam erat ullamcorper. Sed a leo non nisl gravida faucibus ut eu neque. In auctor ligula quis aliquet congue.</p>
+    
+  </div>
+  
+  <% link_to '/', class: 'lemon-back' do %>
+    <%= partial 'lemons.svg' %>
+  <% end %>
+  
+</div>

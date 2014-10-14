@@ -1,0 +1,13 @@
+<div class="cover tile">
+  <span data-picture data-alt="<%= work.capitalize %>">
+    <span data-src="<%= thumbnail_url("/assets/images/work/#{work}.png", :sm) %>"></span>
+    <span data-src="<%= thumbnail_url("/assets/images/work/#{work}.png", :sm_2x) %>"  data-media="(min-device-pixel-ratio: 2.0), (-webkit-min-device-pixel-ratio: 2.0)"></span>
+    <span data-src="<%= thumbnail_url("/assets/images/work/#{work}.png", :md) %>"    data-media="(min-width: 768px)"></span>
+    <span data-src="<%= thumbnail_url("/assets/images/work/#{work}.png", :md_2x) %>"  data-media="(min-width: 768px) and (min-device-pixel-ratio: 2.0), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
+    <span data-src="<%= thumbnail_url("/assets/images/work/#{work}.png", :lg) %>"    data-media="(min-width: 992px)"></span>
+    <span data-src="<%= thumbnail_url("/assets/images/work/#{work}.png", :lg_2x) %>"  data-media="(min-width: 992px) and (min-device-pixel-ratio: 2.0), (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2.0)"></span>
+    <noscript>
+      <img src="<%= thumbnail_url("/assets/images/work/#{work}.png", :xs) %>" alt="<%= work.capitalize %>">
+    </noscript>
+  </span>
+</div>
