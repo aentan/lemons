@@ -18,9 +18,7 @@ $(function() {
 
   // Fadeout
   $d.on('pjax:start', function(e) {
-    $main.after($main.clone().attr('id', 'clone'));
-    $('#clone').css('z-index', 1090);
-    $body.css('overflow', 'hidden');
+    //
   });
 
   $d.on('pjax:end', function(e) {
@@ -38,8 +36,9 @@ $(function() {
   if ($.support.pjax) {
     // Load
     $d.on('click', '.tile', function(e) {
+      $tile = $(this);
       e.preventDefault();
-      pjaxLoad($(this).attr('href'));
+      pjaxLoad($tile.attr('href'));
     });
     // Back button
     $d.on('click', '.lemon-back', function(e) {
