@@ -4,6 +4,11 @@
 @import 'type';
 
 
+* {
+  box-sizing: border-box;
+}
+
+
 /*
 GRID + TILES
 */
@@ -155,8 +160,28 @@ WORK
   }
 }
 
+.color-chip {
+  display: inline-block;
+  width: 160px;
+  height: 192px;
+  padding-top: 160px;
+  border: 1px solid #000;
+  margin: 16px 8px;
+  text-align: left;
+  > span {
+    display: block;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 8px 10px;
+    background-color: #fff;
+    color: #000;
+  }
+}
+
 .contact {
-  margin: 48px auto;
+  margin: 48px auto 0;
   width: 100%;
   max-width: 480px;
   text-align: center;
@@ -184,6 +209,10 @@ GENERAL
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
+}
+
+a {
+  color: #767DE6;
 }
 
 

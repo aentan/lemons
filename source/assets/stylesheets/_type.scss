@@ -18,9 +18,16 @@ p.lead {
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 1.5em;
+  a {
+    text-decoration: none;
+  }
 }
 
 p {
   font-size: 24px;
   line-height: 36px;
+}
+
+.text-center {
+  text-align: center;
 }
