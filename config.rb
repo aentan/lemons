@@ -101,6 +101,16 @@ activate :svg_fallback,
   :inkscape_bin => '/Applications/Inkscape.app/Contents/Resources/bin/inkscape',
   :inkscape_options => '--export-dpi=100 --export-background-opacity=0'
 
+# Deploy
+activate :deploy do |deploy|
+  deploy.method = :git
+  # Optional Settings
+  # deploy.remote   = "custom-remote" # remote name or git url, default: origin
+  # deploy.branch   = "custom-branch" # default: gh-pages
+  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
+  deploy.build_before = true # default: false
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
