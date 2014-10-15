@@ -145,7 +145,10 @@ WORK
     margin-bottom: 32px;
   }
   figure {
-    padding: 32px 48px;
+    padding: 32px auto;
+    @media (min-width: $screen-md-min) {
+      padding: 32px;
+    }
     img {
       @include img-responsive();
     }
