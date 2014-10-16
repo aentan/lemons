@@ -12,6 +12,14 @@ MIXINS
   height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
 }
 
+@mixin text-hide() {
+  font: #{0/0} a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
 @mixin browser-appearance($appearance) {
   -webkit-appearance: $appearance;
   -moz-appearance:    $appearance;

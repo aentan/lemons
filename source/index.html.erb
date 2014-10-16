@@ -1,12 +1,22 @@
 ---
 title: Lemons
 ---
+<a href="#about" id="info">Info</a>
+
+<div id="about">
+  <div class="wrapper">
+    <p class="lead">We create fresh and mouthwatering identities for fresh businesses.</p>
+    <p>Scroll to view</p>
+  </div>
+</div>
+
 <div id="grid">
 <% ['sunday', 'angelround', 'multiply', '6degrees', 'lifeopp', 'curioucity', 'found', 'fisheye'].each do |work| %>
   <%= partial(:tile, locals: { :work => work }) %>
 <% end %>
 
   <%= partial 'lemons.svg' %>
-  <%= partial 'lemons.svg' %>
 
 </div>
+
+<%= partial 'lemons.svg' %>

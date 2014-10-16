@@ -47,4 +47,11 @@ $(function() {
     });
   }
   
+  // About
+  
+  $d.on('click', '#info', function(e) {
+    e.preventDefault();
+    $body.toggleClass('info-active');
+  });
+  
 });
